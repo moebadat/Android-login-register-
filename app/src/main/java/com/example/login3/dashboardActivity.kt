@@ -20,8 +20,8 @@ class dashboardActivity : AppCompatActivity() {
         lateinit var tvWelcome: TextView
 
 
-        welcomeText = "Welcome " + getIntent().getStringExtra("userName") + " !";
-        tvWelcome = findViewById(R.id.tvWelcome);
+        welcomeText ="Welcome "+ getIntent().getStringExtra("Username").toString() + "!";
+        tvWelcome = this.findViewById(R.id.tvWelcome);
         tvWelcome.setText(welcomeText);
     }
 }

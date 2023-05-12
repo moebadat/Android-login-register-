@@ -66,12 +66,14 @@ class loginActivity : AppCompatActivity() {
                     e.printStackTrace()
                 }
                 if (s == userName) {
+                    val intent = Intent(this@loginActivity,dashboardActivity::class.java)
+                    intent.putExtra("Username",s)
                     Toast.makeText(
                         this@loginActivity,
                         "Successfully logged in",
                         Toast.LENGTH_LONG
                     ).show()
-                    startActivity(Intent(this@loginActivity, dashboardActivity::class.java))
+                    startActivity(intent);
                 } else {
                     Toast.makeText(this@loginActivity, "Not logged in", Toast.LENGTH_LONG)
                         .show()
