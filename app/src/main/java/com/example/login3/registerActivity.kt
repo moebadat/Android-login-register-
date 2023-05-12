@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import okhttp3.ResponseBody
@@ -31,6 +32,10 @@ class registerActivity : AppCompatActivity() {
         etPassword = findViewById(R.id.etRPassword)
         etButton = findViewById(R.id.btnRegister)
 
+        this.findViewById<TextView>(R.id.tvLoginLink).setOnClickListener{
+            startActivity(Intent(this, loginActivity::class.java))
+        }
+
         etButton.setOnClickListener {
             registerUser()
         }
@@ -49,10 +54,12 @@ class registerActivity : AppCompatActivity() {
             etPassword.requestFocus()
             return
         };
+
+        //Every call needs a response
         val call: Call<ResponseBody> = RetroFitClient
             .getInstance()
             .api
-            .createUser(User(userName, password))
+            .createUser(User(userName, password)) as Call<ResponseBody>
         call.enqueue(object : Callback<ResponseBody?> {
             override fun onResponse(call: Call<ResponseBody?>?, response: Response<ResponseBody?>) {
                 var s = ""
