@@ -6,9 +6,7 @@
     android:layout_height="match_parent"
     android:padding="40dp"
     android:background="@color/colorAccent"
-    tools:context=".registerActivity"
-
-    >
+    tools:context=".registerActivity">
 
 
 
