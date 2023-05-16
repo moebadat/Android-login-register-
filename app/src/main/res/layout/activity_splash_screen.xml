@@ -6,16 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".splashScreen">
 
+
     <ImageView
-        android:id="@+id/SplashScreenImage"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/images__1_"
+        android:id="@+id/imageView2"
+        android:layout_width="306dp"
+        android:layout_height="391dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/genie" />
 </androidx.constraintlayout.widget.ConstraintLayout>

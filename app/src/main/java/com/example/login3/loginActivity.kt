@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
@@ -21,6 +22,7 @@ class loginActivity : AppCompatActivity() {
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.blue));
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 

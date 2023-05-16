@@ -8,14 +8,16 @@
     android:background="@color/colorAccent"
     tools:context=".loginActivity">
 
+
+
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:padding="10dp"
-        android:text="SpringDroid"
-        android:textColor="@color/colorPrimaryDark"
+        android:text="Coding Genie"
+        android:textColor="@color/green"
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +68,7 @@
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/blue"
         android:text="LOGIN"
         android:textColor="@android:color/background_dark"
         android:textSize="16sp"
@@ -82,7 +84,7 @@
         android:layout_marginTop="48dp"
         android:gravity="center"
         android:text="New user?\nClick here to register"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/green"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

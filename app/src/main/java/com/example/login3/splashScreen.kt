@@ -8,10 +8,12 @@ import android.view.WindowManager
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 
 @Suppress("DEPRECATION")
 class splashScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        window.setStatusBarColor(ContextCompat.getColor(this, R.color.blue));
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
@@ -22,7 +24,7 @@ class splashScreen : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
-        val backgroundImage: ImageView = findViewById(R.id.SplashScreenImage)
+        val backgroundImage: ImageView = findViewById(R.id.imageView2)
         val slideAnimation = AnimationUtils.loadAnimation(this, R.anim.slide_in)
         backgroundImage.startAnimation(slideAnimation)
 
