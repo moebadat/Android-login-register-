@@ -23,8 +23,8 @@ public interface API<results> {
     );
 
 
-    @GET("getAll")
-    Call<List<results>> getAll();
+//    @GET("getAll")
+//    Call<List<results>> getAll();
 
 
 }

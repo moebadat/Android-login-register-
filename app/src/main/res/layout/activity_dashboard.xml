@@ -73,7 +73,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:src="@drawable/ic_back"
         android:background="?attr/selectableItemBackground"
         android:padding="8dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -150,29 +149,29 @@
                 app:layout_constraintStart_toStartOf="@+id/textView2"
                 app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/todoB"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="@color/blue"
-                android:text="TODO LIST"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/todoB"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginBottom="8dp"-->
+<!--                android:backgroundTint="@color/blue"-->
+<!--                android:text="TODO LIST"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent" />-->
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/editProfileB"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/editProfileB"-->
+<!--                style="@style/Widget.MaterialComponents.Button.OutlinedButton"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
 
-                android:layout_marginStart="8dp"
-                android:backgroundTint="@color/blue"
-                android:text="EDIT PROFILE"
-                android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="@+id/todoB"
-                app:layout_constraintStart_toEndOf="@+id/todoB" />
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:backgroundTint="@color/blue"-->
+<!--                android:text="EDIT PROFILE"-->
+<!--                android:textColor="@color/white"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/todoB"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/todoB" />-->
             <ImageButton
                 android:id="@+id/profileB"
                 android:layout_width="wrap_content"

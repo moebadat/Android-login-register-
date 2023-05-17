@@ -29,8 +29,8 @@ class dashboardActivity : AppCompatActivity() {
         val profileB: ImageButton = findViewById(R.id.profileB)
 
         // register all the Buttons with their appropriate IDs
-        val todoB: Button = findViewById(R.id.todoB)
-        val editProfileB: Button = findViewById(R.id.editProfileB)
+//        val todoB: Button = findViewById(R.id.todoB)
+//        val editProfileB: Button = findViewById(R.id.editProfileB)
 
         // register all the card views with their appropriate IDs
         val contributeCard: CardView = findViewById(R.id.contributeCard)
@@ -42,10 +42,10 @@ class dashboardActivity : AppCompatActivity() {
 
         // handle each of the image buttons with the OnClickListener
         backB.setOnClickListener {
-            Toast.makeText(this, "Back Button", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Back", Toast.LENGTH_SHORT).show()
         }
         logOutB.setOnClickListener {
-            Toast.makeText(this, "Logout Button", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Logged out", Toast.LENGTH_SHORT).show()
 
                 val intent = Intent(this, registerActivity ::class.java)
                 startActivity(intent)
@@ -53,23 +53,23 @@ class dashboardActivity : AppCompatActivity() {
 
         }
         profileB.setOnClickListener {
-            Toast.makeText(this, "Profile Image", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(this, "Profile Image", Toast.LENGTH_SHORT).show()
         }
 
 
         // handle each of the buttons with the OnClickListener
-        todoB.setOnClickListener {
-            Toast.makeText(this, "TODO LIST", Toast.LENGTH_SHORT).show()
-
-        }
-        editProfileB.setOnClickListener {
-            Toast.makeText(this, "Editing Profile", Toast.LENGTH_SHORT).show()
-        }
+//        todoB.setOnClickListener {
+//            Toast.makeText(this, "TODO LIST", Toast.LENGTH_SHORT).show()
+//
+//        }
+//        editProfileB.setOnClickListener {
+//            Toast.makeText(this, "Editing Profile", Toast.LENGTH_SHORT).show()
+//        }
 
 
         // handle each of the cards with the OnClickListener
         contributeCard.setOnClickListener {
-            Toast.makeText(this, "Contribute Articles", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Contribute code", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, ContributionActivity ::class.java)
             startActivity(intent)
             finish()
@@ -88,7 +88,7 @@ class dashboardActivity : AppCompatActivity() {
             finish()
         }
         interestsCard.setOnClickListener {
-            Toast.makeText(this, "Filter your Interests", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Edit/View your interests", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, InterestsActivity ::class.java)
             startActivity(intent)
             finish()
